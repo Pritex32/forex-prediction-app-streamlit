@@ -3,7 +3,7 @@
 tensorflow==2.18.0
 numpy==1.26.4
 streamlit==1.41.0
-streamlit-option-menu==0.4.0
+
 matplotlib==3.9.2
 pillow==11.0.0
 
@@ -17,43 +17,4 @@ statsmodels==0.14.4
 
 yfinance==0.2.50
 
-autocommand==2.2.2
-docutils==0.21.2
-filelock==3.16.1
-hid-converge==2.0.1.1
-HTMLParser==0.0.2
-imp-toolkit-logs==0.1.4
-ini2toml==0.15
 
-keyring==25.5.0
-more-itertools==10.5.0
-
-packaging==24.1
-
-pgen2==0.1.1
-pillow==10.4.0
-pip==24.3.1
-platformdirs==3.10.0
-PyConfigParser==1.0.5
-pyOpenSSL==24.2.1
-PySocks==1.7.1
-
-setuptools==75.1.0
-
-tomli-w==1.1.0
-typeguard==4.4.1
-typing_extensions==4.11.0
-wheel==0.44.0
-backports.cached-property==1.0.2
-FastFlask==1.2.32
-importlib-metadata==8.5.0
-arrayfunc==8.5.2
-
-python-ntlm==1.1.0
-jditpc-message==0.1
-JPype1==1.5.0
-openbaton-cli==6.0.0
-ahcm==0.1
-ask-crawling==0.0.0
-forked-path==0.2.3
-anis-package==1.0.0
