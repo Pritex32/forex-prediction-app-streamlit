@@ -33,7 +33,7 @@ pyOpenSSL==24.2.1
 PySocks==1.7.1
 
 setuptools==75.1.0
-pip install protobuf==3.19.6
+
 tomli-w==1.1.0
 typeguard==4.4.1
 typing_extensions==4.11.0
