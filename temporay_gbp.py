@@ -53,8 +53,9 @@ st.sidebar.write("""
 4. **Download the Forecast**: After generating the predictions, you can download the forecasted values in a convenient format.
 """)
 
-dfr= data.dropna(inplace=True)
-df_dup = data.drop_duplicates(inplace=True)
+data.dropna(inplace=True)
+data.drop_duplicates(inplace=True)
+
 
 
 rollmean=data['Open'].rolling(50).mean() # the moving average
