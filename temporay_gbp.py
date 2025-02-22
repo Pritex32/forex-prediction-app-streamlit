@@ -37,7 +37,7 @@ st.write(data)
 st.subheader('Sample of latest updated data')
 st.write(tail)
 
-model=load_model('gbpusd stock model.keras')
+model=load_model(r'gbpusd stock model.keras')
 
 st.sidebar.header('App Details')
 st.sidebar.write('Welcome to the **Future Price Forecasting App**! This application is designed to assist traders and investors in making informed decisions by providing accurate price forecasts for stocks currency pairs, or other financial instruments.')
