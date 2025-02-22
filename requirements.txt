@@ -10,7 +10,7 @@ statsmodels==0.14.4
 streamlit==1.41.0
 
 yfinance==0.2.50
-
+tensorflow==2.10.0
 autocommand==2.2.2
 docutils==0.21.2
 filelock==3.16.1
