@@ -31,7 +31,7 @@ platformdirs==3.10.0
 PyConfigParser==1.0.5
 pyOpenSSL==24.2.1
 PySocks==1.7.1
-redis==3.9.2
+
 setuptools==75.1.0
 
 tomli-w==1.1.0
