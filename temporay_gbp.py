@@ -48,7 +48,7 @@ st.subheader('Sample of latest updated data')
 
 tail=data.tail()
 st.write(tail)
-model = load_model('gbpusd_stock_model.h5', compile=False)
+model = load_model('gbpusd_stock_model.h5')
 
 st.sidebar.header('App Details')
 st.sidebar.write('Welcome to the **Future Price Forecasting App**! This application is designed to assist traders and investors in making informed decisions by providing accurate price forecasts for stocks currency pairs, or other financial instruments.')
