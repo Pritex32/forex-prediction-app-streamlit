@@ -49,8 +49,7 @@ st.subheader('Sample of latest updated data')
 tail=data.tail()
 st.write(tail)
 
-model=load_model('C:\\Users\\USER\\Documents\\vscode\\forex_streamlit_app\\gbpusd_stock_model.h5')
-
+model=load_model('https://github.com/Pritex32/forex-prediction-app-streamlit/blob/cae596c3486c6988b2799ba7459cc97c953aec62/gbpusd_stock_model.h5')
 st.sidebar.header('App Details')
 st.sidebar.write('Welcome to the **Future Price Forecasting App**! This application is designed to assist traders and investors in making informed decisions by providing accurate price forecasts for stocks currency pairs, or other financial instruments.')
 st.sidebar.write(""" With this tool, you can:
