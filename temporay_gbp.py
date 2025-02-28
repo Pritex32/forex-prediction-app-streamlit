@@ -73,7 +73,7 @@ st.write(data.head())
 
 st.subheader('One hour data')
 st.write(data_one_hour.head())
-
+import requests
 model_url = "https://github.com/Pritex32/forex-prediction-app-streamlit/raw/main/gbpusd_stock_model.h5"
 model_path = "gbpusd_stock_model.h5"
 
