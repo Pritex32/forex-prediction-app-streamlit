@@ -10,7 +10,7 @@ import streamlit as st
 import tensorflow as tf
 from tensorflow import keras
 from keras.models import load_model
-
+import yfinance as yf
 
 
 import datetime
@@ -28,10 +28,10 @@ import time
 
 gbpusd=st.text_input('Enter the stock ID','GBPUSD')
 
-import yfinance as yf
+
 
 # Fetch GBP/USD forex data with a daily interval
-import yfinance as yf
+
 
 # Fetch GBP/USD forex data from 2010 to present with daily interval
 # Function to fetch GBP/USD data with caching
