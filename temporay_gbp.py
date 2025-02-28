@@ -161,19 +161,8 @@ from sklearn.metrics import mean_squared_error
 rmse=np.sqrt(mean_squared_error(inv_y_test,inv_pred))
 st.write('mean_squared_error',rmse)
 
-daily_pred=data_one_hour[['Open']]
-scaled_data=scaler.transform(daily_pred)
 
-x_v=[]
-y_v=[]
-for i in range (60,len(scaled_data)):
-      x_v.append(scaled_data[i-60:i])
-      y_v.append(scaled_data[i])
-x_v=np.array(x_v)
-y_v=np.array(y_v)
 
-from sklearn.model_selection import train_test_split
-x_train_h,x_test_h,y_train_h,y_test_h=train_test_split(x_v,y_v,test_size=0.3,random_state=42)
 
 
 st.subheader('Forecast')
@@ -236,7 +225,7 @@ st.pyplot(fig2)
 
 st.subheader('Hourly forecast')
 
-model2=load_model('C:\\Users\\USER\\Documents\\vscode\\forex_streamlit_app\\hourly_model_forex.h5')
+model2=load_model('https://github.com/Pritex32/forex-prediction-app-streamlit/blob/main/hourly_model_forex.h5')
 
 
 daily_pred=data_one_hour[['Open']]
