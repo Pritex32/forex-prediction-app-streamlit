@@ -74,10 +74,16 @@ st.write(data.head())
 st.subheader('One hour data')
 st.write(data_one_hour.head())
 
+model_url = "https://github.com/Pritex32/forex-prediction-app-streamlit/raw/main/gbpusd_stock_model.h5"
+model_path = "gbpusd_stock_model.h5"
+
+with open(model_path, "wb") as f:
+    f.write(requests.get(model_url).content)
+
+# Load model
+model = tf.keras.models.load_model(model_path)
 
 
-
-model=load_model("https://github.com/Pritex32/forex-prediction-app-streamlit/blob/main/gbpusd_stock_model.h5")
 
 st.sidebar.header('App Details')
 st.sidebar.write('Welcome to the **Future Price Forecasting App**! This application is designed to assist traders and investors in making informed decisions by providing accurate price forecasts for stocks currency pairs, or other financial instruments.')
