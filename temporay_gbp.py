@@ -225,7 +225,7 @@ st.pyplot(fig2)
 
 st.subheader('Hourly forecast')
 
-model2=load_model('https://github.com/Pritex32/forex-prediction-app-streamlit/blob/main/hourly_model_forex.h5')
+model2=tf.keras.model.load_model("forex-prediction-app-streamlit/hourly_model_forex.h5")
 
 
 daily_pred=data_one_hour[['Open']]
