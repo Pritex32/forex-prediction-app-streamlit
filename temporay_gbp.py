@@ -83,15 +83,13 @@ import os
 file= h5py.File(file_path,'r')
 os.environ["HDF5_USE_FILE_LOCKING"] = "FALSE"
 
-
-import os
 import h5py
 
 # Disable HDF5 file locking
 os.environ["HDF5_USE_FILE_LOCKING"] = "FALSE"
 
 # Define the model file path
-file_path = "forex-prediction-app-streamlit/gbpusd_stock_model.hdf5"
+file_path = "forex-prediction-app-streamlit/gbpusd_stock_model.h5"
 
 # Check if the file exists
 if os.path.exists(file_path):
