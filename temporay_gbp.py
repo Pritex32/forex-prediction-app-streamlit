@@ -77,8 +77,8 @@ st.write(data_one_hour.head())
 import requests
 
 # Define the URL and local file path
-model_url = "https://github.com/Pritex32/forex-prediction-app-streamlit/raw/main/gbpusd_stock_model.h5"
-model_path = "gbpusd_stock_model.h5"
+model_url = "https://github.com/Pritex32/forex-prediction-app-streamlit/raw/main/gbpusd_stock_model.hdf5"
+model_path = "gbpusd_stock_model.hdf5"
 
 # Download the model file
 response = requests.get(model_url)
