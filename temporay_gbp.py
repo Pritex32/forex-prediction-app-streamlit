@@ -74,7 +74,28 @@ st.subheader('One hour data')
 st.write(data_one_hour.head())
 
 
-model = tf.keras.models.load_model("forex-prediction-app-streamlit/gbpusd_stock_model.h5")
+import requests
+
+# Define the URL and local file path
+model_url = "https://github.com/Pritex32/forex-prediction-app-streamlit/raw/main/gbpusd_stock_model.h5"
+model_path = "gbpusd_stock_model.h5"
+
+# Download the model file
+response = requests.get(model_url)
+if response.status_code == 200:
+    with open(model_path, "wb") as f:
+        f.write(response.content)
+    print("Model downloaded successfully.")
+else:
+    print("Failed to download the model. Check the URL.")
+    exit()
+
+# Load the model
+model = tf.keras.models.load_model(model_path)
+print("Model loaded successfully!")
+
+
+
 
 
 
