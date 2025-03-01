@@ -23,8 +23,7 @@ st.subheader('Author: Prisca Ukanwa')
 
 st.write('notification: put in only the ticker ID of the stock')
 
-from alpha_vantage.timeseries import TimeSeries
-import time
+
 
 gbpusd=st.text_input('Enter the stock ID','GBPUSD')
 
