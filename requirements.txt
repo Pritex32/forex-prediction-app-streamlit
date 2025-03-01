@@ -6,7 +6,7 @@ streamlit==1.41.0
 
 matplotlib==3.9.2
 pillow==11.0.0
-
+requests==2.32.3
 seaborn==0.13.2
 numpy==1.26.4
 pandas==2.2.2
