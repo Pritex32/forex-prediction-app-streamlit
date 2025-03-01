@@ -81,17 +81,9 @@ model_url = "https://github.com/Pritex32/forex-prediction-app-streamlit/raw/main
 model_path = "gbpusd_stock_model.hdf5"
 
 # Download the model file
-response = requests.get(model_url)
-if response.status_code == 200:
-    with open(model_path, "wb") as f:
-        f.write(response.content)
-    print("Model downloaded successfully.")
-else:
-    print("Failed to download the model. Check the URL.")
-    exit()
 
 # Load the model
-model = tf.keras.models.load_model(model_path)
+model = tf.keras.models.load_model("forex-prediction-app-streamlit/gbpusd_stock_model.hdf5")
 print("Model loaded successfully!")
 
 
