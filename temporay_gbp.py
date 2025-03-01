@@ -73,15 +73,9 @@ st.write(data.head())
 
 st.subheader('One hour data')
 st.write(data_one_hour.head())
-import requests
-model_url = "https://github.com/Pritex32/forex-prediction-app-streamlit/raw/main/gbpusd_stock_model.h5"
-model_path = "gbpusd_stock_model.h5"
 
-with open(model_path, "wb") as f:
-    f.write(requests.get(model_url).content)
 
-# Load model
-model = tf.keras.models.load_model(model_path)
+model = tf.keras.models.load_model("forex-prediction-app-streamlit/gbpusd_stock_model.h5")
 
 
 
