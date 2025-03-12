@@ -74,40 +74,12 @@ st.subheader('One hour data')
 st.write(data_one_hour.head())
 
 
-import requests
-
-# Define the URL and local file path
-model_url = "https://github.com/Pritex32/forex-prediction-app-streamlit/raw/main/gbpusd_stock_model.hdf5"
-model_path = "gbpusd_stock_model.hdf5"
 import os
 import h5py
 
-
-# Define the model file path
-file_path = "forex-prediction-app-streamlit/gbpusd_stock_model.h5"
-
-# Check if the file exists
-if os.path.exists(file_path):
-    print("File exists ✅")
-    
-    # Open with h5py to verify it's accessible
-    try:
-        with h5py.File(file_path, 'r') as file:
-            print("HDF5 file opened successfully ✅")
-
-        # Load the model
-        model = tf.keras.models.load_model(file_path)
-        print("Model loaded successfully ✅")
-
-    except Exception as e:
-        print(f"Error opening HDF5 file: {e}")
-
-else:
-    print("File not found ❌")
-
 # Load the model
-model = tf.keras.models.load_model("forex-prediction-app-streamlit/gbpusd_stock_model.hdf5")
-print("Model loaded successfully!")
+model = tf.keras.models.load_model("gbpusd_stock_model.hdf5")
+
 
 
 
